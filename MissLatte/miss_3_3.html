@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MISSLATTE-檸檬黑醋栗蛋糕</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" type="image/x-icon" href="imge/logo_16X16.jpg">
+</head>
+<body>
+	
+
+
+
+<!-- DETAILS -->
+
+<div class="details">
+  <div class="content"> 
+  
+  <div class="close"><a href="miss_3_1.html"><i class="fa fa-times-circle"></i></a></div>
+  
+	 <div class="detail_left">
+      <div class="detail_smail">
+        		<img class="small" src="imge3/miss_3_18+.jpg" alt="cake">
+        	 	<img class="small" src="imge3/miss_3_20+.jpg" alt="cake">
+            <img class="small" src="imge3/miss_3_19+.jpg" alt="cake">
+            <div class="clear"></div>
+      </div>
+      <div class="detail_center" >
+           <img id="large" src="imge3/miss_3_19.jpg">
+      </div>
+     <div class="clear"></div>
+</div>
+
+
+
+
+
+
+
+	 <div class="detail_right">
+
+	 	<div class="icon">
+	 		<a href=""></a><img src="imge3/facebook_circle_black-128.png" alt="facebook">
+	 		<a href=""><img src="imge3/logo-share-128.png" alt="share"></a>
+	 		<a href=""><img src="imge3/instagram_circle_black-128.png" alt="instagram"></a>
+	 	</div>
+     <div class="detail_price">
+
+     	 <p>$999</p>
+     	 <span>檸檬黑醋栗蛋糕</span>
+     </div>	 
+     <div class="detail_size">
+     	 <p>尺寸容量: <span>約17cm x 7.5cm x 6cm</span></p>
+     </div>
+     <div class="detail_keep">
+         <div class="keep_box">
+          <div class="keep_L"><a href="#">保存方式</a></div>
+          <div class="keep_R" id="keep_R"><a href="#">製造成分</a></div>
+        </div>
+          <div class="keep_C" ><p>雞蛋、牛奶、動物鮮奶油、
+           奶油、砂糖、低筋麵粉、新鮮百里香 、有機檸檬</p>
+          </div>
+          <div class="buyit"><a href="#">BUY IT<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>  	
+     </div>
+
+	  </div>
+     <div class="clear"></div>
+
+
+
+     <!-- index -->
+
+<div class="index">
+
+   <div class="chevron-left">
+     <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i>PREV</a>
+     </div>
+    <div class="chevron-right"> 
+     <a href="#">NEXT<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+   </div>
+
+</div>
+   
+  </div> 
+</div>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="main.js"></script>
+
+
+<script>
+function showLarge(e){
+  var imgobj= e.target || event.srcElement;
+  var src= imgobj.src;
+  document.getElementById("large").src=src.replace("+","");
+}
+
+function init(){
+  var imgs=document.getElementsByClassName("small");
+   for(var i=0; i<imgs.length; i++)
+    imgs[i].onmouseover=showLarge;
+ 
+}
+
+window.onload = init;
+</script>
+
+</body>
+</html>

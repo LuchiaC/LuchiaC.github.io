@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+
+
+
+
+/*---------------details-------*/
+.fa-times-circle{
+  color:#000000;
+  position:absolute;
+  top: 0;right: 0;
+  font-size: 50px;
+}
+
+.details{
+  width: 100%;
+ height: 100%;
+ box-sizing: border-box;
+ padding:5% 5%;
+
+}
+.details .content{
+   box-shadow: 0px 0px 15px #ADADAD;
+   max-width: 1170px;
+	 margin: auto;
+   color:#373d45;
+   position: relative;
+   padding:5% 5%;
+}
+
+.detail_smail img{
+	display: block;
+}
+
+
+.detail_left{
+  width: 60%;
+  /*margin: auto;*/
+  float: left;
+}
+
+.detail_smail{
+  margin-right: 2%;
+  height: auto;
+  float: left;
+}
+.detail_smail img{
+ padding-bottom: 10px;
+}
+.detail_center{
+  float: left;
+  height: auto;
+  margin: auto;
+}
+.detail_center img{
+  max-width: 100%;
+}
+.detail_right{
+  margin-left: 30px;   
+	width: 30%;
+	height: auto;
+  float:left;
+  position: relative;
+}
+.icon img{
+	width: 24px;height: 24px;
+}
+.detail_price p{
+	font-family: monospace ;
+	margin-top:72px;
+	font-size: 46px;	
+}
+.detail_price span{
+	font-size: 22px;
+	line-height: 40px;
+	letter-spacing: 1.5px;
+}
+.keep_C,.keep_D{
+	position: relative;
+	width: 100%;height: 145px;
+	border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  bottom: 0;
+}
+
+.detail_size{
+    margin: 40px 0px;
+}
+.detail_size span{
+	font-family: monospace ;
+    display: block;
+}
+.detail_size p ,.keep_C p{
+	font-size: 12px;
+    color:#373d45;
+}
+.keep_C p{
+	/*width: 225px; height: 50px;*/
+	text-align: center;
+  padding-top:15%;
+	line-height:20px ;
+	position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+}
+
+
+
+.keep_L a ,.keep_R a{
+    text-decoration: none;
+    padding:0px 35px;
+    font-size: 12px;
+    color:#373d45;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+  /*left:39px;*/
+}
+.keep_L a:after{
+       content: '';
+       background-color: #373D45;
+       position: absolute;
+       bottom: 0;left: 6px;margin: auto;
+       top:-5px;right: 0;
+       width: 120px;height: 22px;
+       z-index: -1;
+}
+
+
+
+.keep_R a:after{
+       content: '';
+       background-color: #373D45;
+       position: absolute;
+       bottom: 0;left: 6px;margin: auto;
+       top:-5px;right: 0;
+       width: 120px;height: 22px;
+       z-index: -1;
+}
+.keep_L:active a:after{
+     background-color: #FFF;
+}
+.keep_R:active a:after{
+     background-color: #FFF;
+}
+
+
+.buyit{
+	position: relative;
+        left: 5px;
+	
+}
+.icon{
+	position: absolute;
+	top:0px;
+	right: 0;
+}
+.keep_box{
+  box-sizing: border-box;
+  padding:  0 30px;
+}
+.keep_L ,.keep_R {
+     text-align: center;
+     display: inline-block;
+     margin-left: 1%;
+     border-style: solid;
+     border-width: 1px 1px 0px 1px;
+     border-color: #373d45;
+     background-color: #FFF;
+}
+.buyit a{
+
+	 font-size:14px;
+	 position: relative;
+	 color: #fff;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	padding-top:1px;
+	font-family: monospace ;
+}
+
+
+.buyit a:after{
+	  position: absolute;
+	 top:1px; bottom: 0;left: 0px;right:0;
+	 margin: auto;
+	 content: '';
+	 background-color: #373D45;
+	 width: 130px;height:20.5px;
+	  z-index: -1;
+}
+
+.buyit i{
+	margin-left: 10px;
+}
+.buyit:hover a:after{
+	background-color: #45485A;
+}
+
+
+@media(max-width: 1085px){
+  .small{
+    float: left;
+    margin-right: 10px;
+  }
+
+}
+
+@media(max-width: 767px){
+  .detail_right,.detail_left{
+   width: 100%;
+  }
+  .detail_center{
+    width: 100%;
+  }
+  .detail_center img{
+    width: 100%;
+  }
+  .detail_right{
+    margin: auto;
+    text-align: center;
+  }
+  .detail_smail img{
+    display: inline-block;
+  }
+}
+
+@media(max-width: 435px){
+  .index{
+    padding-bottom: 20px;
+  }
+
+}
+
+
+/*----------index----------*/
+
+
+
+.index{   
+  margin: auto;
+  margin-top:100px;
+}
+
+.chevron-left{
+	float: left;
+}
+.chevron-right{
+	float: right;
+}
+.chevron-left a,.chevron-right a{
+     text-decoration: none;
+     color:#373D45; 
+     font-size: 19px  ;
+     font-family: monospace ; 
+}
+.chevron-left i,.chevron-right i{
+    display: inline-block;
+     margin: 0px 10px ;
+     font-size: 16px; 
+}
+.clear{
+  clear:both;
+}
